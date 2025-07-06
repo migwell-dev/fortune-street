@@ -203,7 +203,7 @@ header::before {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
-  column-gap: 25px;
+  column-gap: 35px;
   row-gap: 50px;
   padding: 10px;
   width: max-content;
@@ -214,7 +214,7 @@ header::before {
   display: flex;
   flex-direction: column;
   border-radius: 16px 16px 16px 16px;
-  width: 350px;
+  width: 272px;
   box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-color: #000000;
