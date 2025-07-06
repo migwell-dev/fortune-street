@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune St. | Let the streets wear you</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav class="menu-container">
+    <a href="#" class="menu-logo" onclick="hideCart()">
+      <img src="./assets/logo.png" alt="Fortune Logo" />
+    </a>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#" onclick="hideCart()">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#shop" onclick="hideCart()">
+            Shop
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.google.com/maps/place/Metro+Manila/data=!4m2!3m1!1s0x3397c8d26026386d:0x5fed23daac9278d0?sa=X&ved=1t:242&ictx=111"
+            target="_blank">
+            DELIVERING TO: Metro Manila, Philippines
+          </a>
+        </li>
+        <li>
+          <a onclick="showCart()">
+            Cart:
+            <span id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <form action="#" id="shopForm">
+      <section id="home">
+        <header>
+          <div class="header-content">
+            <div class="header-text">
+              <h1 class="header-title">Fortune St.</h1>
+              <h2>Let the streets wear you</h2>
+              <p>Discover your own style through our streetwear collections.</p>
+            </div>
+            <a class="shop-button" href="#shop">
+              Shop now
+            </a>
+          </div>
+        </header>
+
+        <section id="shop">
+          <div class="shop-title">
+            <h1>Discover Reality. Find your Fortune.</h1>
+          </div>
+          <div class="grid">
+
+            <div class="item">
+              <img
+                src="https://i.fbcd.co/products/resized/resized-750-500/preview-7-d255ef9c0a8d9efa5e785c36c2c9184dddc8811848f3fc833b3afa5fe5690fa8.jpg"
+                alt="Urban Grind Graphic Tee" />
+              <div class="card-body">
+                <h2 class="card-title">Urban Grind Graphic Tee</h2>
+                <p class="card-text">Php 1,200</p>
+                <label for="size-0">Size:</label>
+                <select id="size-0" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-0" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(0)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://charlottefolk.co/cdn/shop/files/IMG-5898_2495d51d-cf18-4b47-9990-24aab9297746.png?v=1714409182"
+                alt="Slantline Oversized Hoodie" />
+              <div class="card-body">
+                <h2 class="card-title">Slantline Oversized Hoodie</h2>
+                <p class="card-text">Php 2,800</p>
+                <label for="size-1">Size:</label>
+                <select id="size-1" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-1" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://www.wolvesofhades.com/cdn/shop/files/Dodsrit-NocturnalWillGLongsleeve_0ad4797d-78a9-4d8c-a38f-105d53c610ca.png?v=1706873391"
+                alt="Nocturnal Fade Longsleeve" />
+              <div class="card-body">
+                <h2 class="card-title">Nocturnal Fade Longsleeve</h2>
+                <p class="card-text">Php 1,600</p>
+                <label for="size-2">Size:</label>
+                <select id="size-2" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-2" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="https://m.media-amazon.com/images/I/61+nchSG-LL._UY1000_.jpg" alt="Static Vibe Flannel Shirt" />
+              <div class="card-body">
+                <h2 class="card-title">Static Vibe Flannel Shirt</h2>
+                <p class="card-text">Php 2,300</p>
+                <label for="size-3">Size:</label>
+                <select id="size-3" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-3" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/462318/sub/goods_462318_sub14_3x4.jpg?width=494"
+                alt="Dropstep Cargo Joggers" />
+              <div class="card-body">
+                <h2 class="card-title">Dropstep Cargo Joggers</h2>
+                <p class="card-text">Php 2,000</p>
+                <label for="size-4">Size:</label>
+                <select id="size-4" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-4" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(4)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="https://img.kwcdn.com/product/fancy/af0c19c1-072c-45ef-870f-1099e2875d72.jpg"
+                alt="Bleachwave Ripped Jeans" />
+              <div class="card-body">
+                <h2 class="card-title">Bleachwave Ripped Jeans</h2>
+                <p class="card-text">Php 2,700</p>
+                <label for="size-5">Size:</label>
+                <select id="size-5" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-5" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(5)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="https://skoop.com.ph/cdn/shop/files/skoop-ryuu-sweatpants-brown.jpg?v=1745826253"
+                alt="Monochrome Sweatpants" />
+              <div class="card-body">
+                <h2 class="card-title">Monochrome Sweatpants</h2>
+                <p class="card-text">Php 1,900</p>
+                <label for="size-6">Size:</label>
+                <select id="size-6" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-6" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/443017/item/goods_09_443017_3x4.jpg?width=494"
+                alt="Blockcut Nylon Shorts" />
+              <div class="card-body">
+                <h2 class="card-title">Blockcut Nylon Shorts</h2>
+                <p class="card-text">Php 1,400</p>
+                <label for="size-7">Size:</label>
+                <select id="size-7" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-7" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(7)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="https://commonwealth-ftgg.ph/cdn/shop/files/norda001stealthblack.jpg?v=1715059675"
+                alt="Stealth Runner Sneakers" />
+              <div class="card-body">
+                <h2 class="card-title">Stealth Runner Sneakers</h2>
+                <p class="card-text">Php 3,800</p>
+                <label for="size-8">Size:</label>
+                <select id="size-8" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="8">8</option>
+                  <option value="8.5">8.5</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <input id="qty-8" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(8)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://contents.mediadecathlon.com/p1822393/k$e340c49b3ec0ebc3ae8cbed5e91ed6dc/adult-low-top-skateboarding-longboarding-shoes-vulca-100-black-white-decathlon-8577224.jpg?f=1920x0&format=auto"
+                alt="Concrete Low Skate Shoes" />
+              <div class="card-body">
+                <h2 class="card-title">Concrete Low Skate Shoes</h2>
+                <p class="card-text">Php 3,200</p>
+                <label for="size-9">Size:</label>
+                <select id="size-9" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="8">8</option>
+                  <option value="8.5">8.5</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <input id="qty-9" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(9)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img
+                src="https://blackout-techwear.co.uk/cdn/shop/products/techwear-utility-vest-back-view-uk.jpg?v=1726511299&width=1946"
+                alt="Tactical Utility Vest" />
+              <div class="card-body">
+                <h2 class="card-title">Tactical Utility Vest</h2>
+                <p class="card-text">Php 2,500</p>
+                <label for="size-10">Size:</label>
+                <select id="size-10" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-10" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(10)">Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="https://m.media-amazon.com/images/I/718WUHIIukL._AC_SL1500_.jpg" alt="Citycore Windbreaker" />
+              <div class="card-body">
+                <h2 class="card-title">Citycore Windbreaker</h2>
+                <p class="card-text">Php 2,900</p>
+                <label for="size-11">Size:</label>
+                <select id="size-11" class="size-select">
+                  <option value="">-- Select --</option>
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                  <option value="XL">XL</option>
+                </select>
+                <input id="qty-11" type="number" min="0" placeholder="0">
+                <button type="button" class="add-to-cart" onclick="addToCart(11)">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart-actions">
+            <button type="button" onclick="showCart()">Go to Cart</button>
+          </div>
+
+          <!-- SNACKBAR FROM W3SCHOOLS.COM -->
+          <div id="snackbar">
+            Item has been added!
+          </div>
+        </section>
+      </section>
+
+      <section id="cart">
+        <h1>Your Fortune Cart</h1>
+        <p>Must be your lucky day.</p>
+        <table id="cart-table">
+        </table>
+        <h2>Order Instructions</h2>
+        <textarea id="comments" rows="4" cols="50"></textarea>
+        <h2>How was your shopping experience?</h2>
+        <div class="feedback-group">
+          <label><input type="radio" name="feedback" value="excellent"> Excellent</label>
+          <label><input type="radio" name="feedback" value="good"> Good</label>
+          <label><input type="radio" name="feedback" value="average"> Average</label>
+          <label><input type="radio" name="feedback" value="poor"> Poor</label>
+        </div>
+        <div class="cart-buttons">
+          <button type="reset" onclick="resetAll()">Reset</button>
+          <button type="button" onclick="postForm(event)">Checkout</button>
+        </div>
+      </section>
+
+      <!-- PUT ALL FORM DATA INTO ACCESSIBLE VARIABLES -->
+      <input type="hidden" name="cartData" id="cartData">
+      <input type="hidden" name="extrasData" id="extrasData">
+      <input type="hidden" name="feedbackData" id="feedbackData">
+      <input type="hidden" name="commentsData" id="commentsData">
+      <input type="hidden" name="totalData" id="totalData">
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Fortune Street. All rights reserved.</p>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
+
+<!-- MUST INCLUDE -->
+<!-- form elements -->
+<!-- hyperlinks -->
+<!-- listing tables -->
+<!-- forms -->
